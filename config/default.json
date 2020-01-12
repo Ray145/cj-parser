@@ -1,7 +1,8 @@
 {
     "app": {
         "targetFilePath": "./mocks/0.cj",
-        "targetDatabaseClient": "mongo"
+        "targetDatabaseClient": "mongo",
+        "migrationStrategy": "createOrUpdate"
     },
     "postgres": {
         "host": "localhost",

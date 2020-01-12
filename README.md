@@ -37,8 +37,17 @@ Because we needed to also discover the data, the database structure (models and 
 
 ### Setup
 
+Adjust component configuration `./config/default.json` and (if needed) pm2 configuration `./config/pm2-ecosystem.config.js` to your environment
+
 Install dependencies `npm install`
 
 Run via node `node index.js` or `npm start`
-
+or
 Run via pm2 `pm2 start ./config/pm2-ecosystem.config.js` or `npm run pm2`
+
+
+### TODOs:
+- instead of infering every field as string, attempt to add integer capabilities
+- configurable migration strategy create-or-update (decreases speed due to the extra check but doesn't create duplicates) or force-create; at the moment, only force-create (increases speed but creates duplicates)
+- unit tests
+- instrumentation
