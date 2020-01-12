@@ -20,16 +20,17 @@ Because we needed to also discover the data, the database structure (models and 
 
 	"app": {
 		"targetFilePath": "./mocks/0.cj",						// target file path 
-		"targetDatabaseClient": "mongo"							// target database
+		"targetDatabaseClient": "mongo",					        // target database
+		"migrationStrategy": "createOrUpdate"						// forceCreate or createOrUpdate
 	},
-	"postgres": {												// postgres connection details
+	"postgres": {									        // postgres connection details
 		"host": "localhost",
 		"port": "5432",
 		"username": "postgres",
 		"password": "postgres",
 		"database": "schema_metrics"
 	},
-	"mongo": {													// mongo connection details
+	"mongo": {										// mongo connection details
 		"connString": "mongodb://localhost/schema_metrics"
 	}
 }
