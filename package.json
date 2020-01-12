@@ -1,0 +1,20 @@
+{
+  "name": "cj-parser",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^3.0.1",
+    "knex": "^0.16.3",
+    "line-by-line": "^0.1.6",
+    "lodash": "^4.17.11",
+    "log4js": "^4.0.1",
+    "mongoose": "^5.4.9",
+    "pg": "^7.8.0"
+  }
+}

@@ -1,0 +1,16 @@
+{
+    "app": {
+        "targetFilePath": "./mocks/0.cj",
+        "targetDatabaseClient": "mongo"
+    },
+    "postgres": {
+        "host": "localhost",
+        "port": "5432",
+        "username": "postgres",
+        "password": "postgres",
+        "database": "schema_metrics"
+    },
+    "mongo": {
+        "connString": "mongodb://localhost/schema_metrics"
+    }
+}
