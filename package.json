@@ -13,7 +13,7 @@
   "dependencies": {
     "bluebird": "^3.7.2",
     "config": "^3.2.4",
-    "knex": "^0.16.5",
+    "knex": "^0.19.5",
     "line-by-line": "^0.1.6",
     "lodash": "^4.17.15",
     "log4js": "^4.5.1",
