@@ -1,12 +1,14 @@
 {
   "name": "cj-parser",
   "version": "1.0.0",
-  "description": "",
+  "description": "Parses cj files and import them into the configured target database",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pm2": "pm2 start ./config/pm2-ecosystem.config.js"
   },
-  "author": "",
+  "author": "Razvan Matei",
   "license": "ISC",
   "dependencies": {
     "config": "^3.2.4",
