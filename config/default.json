@@ -2,15 +2,21 @@
     "app": {
         "logLevel": "info",
         "targetFilePath": "./mocks/0.cj",
-        "targetDatabaseClient": "mongo",
-        "migrationStrategy": "checkIfExists"
+        "targetDatabaseClient": "postgres",
+        "migrationStrategy": "checkIfExists",
+        "insertBatchSize": 5000,
+        "singleInsertConcurrency": 10
     },
     "postgres": {
         "host": "localhost",
         "port": "5432",
         "username": "postgres",
         "password": "postgres",
-        "database": "schema_metrics"
+        "database": "schema_metrics",
+        "pool": {
+            "min": 0,
+            "max": 15
+        }
     },
     "mongo": {
         "connString": "mongodb://localhost/schema_metrics"
