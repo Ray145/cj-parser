@@ -3,7 +3,7 @@
         "logLevel": "info",
         "targetFilePath": "./mocks/0.cj",
         "targetDatabaseClient": "mongo",
-        "migrationStrategy": "createOrUpdate"
+        "migrationStrategy": "checkIfExists"
     },
     "postgres": {
         "host": "localhost",

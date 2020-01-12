@@ -21,7 +21,7 @@ Because we needed to also discover the data, the database structure (models and 
 	"app": {
 		"targetFilePath": "./mocks/0.cj",						// target file path 
 		"targetDatabaseClient": "mongo",					        // target database
-		"migrationStrategy": "createOrUpdate"						// forceCreate or createOrUpdate
+		"migrationStrategy": "checkIfExists"						// forceCreate, checkIfExists or createOrUpdate
 	},
 	"postgres": {									        // postgres connection details
 		"host": "localhost",
@@ -49,6 +49,6 @@ Run via pm2 `pm2 start ./config/pm2-ecosystem.config.js` or `npm run pm2`
 
 ### TODOs:
 - instead of infering every field as string, attempt to add integer capabilities
-- configurable migration strategy create-or-update (decreases speed due to the extra check but doesn't create duplicates) or force-create; at the moment, only force-create (increases speed but creates duplicates)
+- configurable migration strategy createOrUpdate (decreases speed due to the extra check but doesn't create duplicates, and also updated already inserted data - this need more data inspection/research and knowledge of the schema), forceCreate (increases the speed but creates duplicates) and checkIfExists (only inserts a record if it doesn't already exist)
 - unit tests
 - instrumentation
