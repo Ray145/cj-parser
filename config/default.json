@@ -1,11 +1,11 @@
 {
     "app": {
-        "logLevel": "info",
+        "logLevel": "debug",
         "targetFilePath": "./mocks/0.cj",
-        "targetDatabaseClient": "postgres",
+        "targetDatabaseClient": "mongo",
         "migrationStrategy": "checkIfExists",
         "insertBatchSize": 5000,
-        "singleInsertConcurrency": 10
+        "singleInsertConcurrency": 5
     },
     "postgres": {
         "host": "localhost",
