@@ -58,7 +58,6 @@ Run via pm2 `pm2 start ./config/pm2-ecosystem.config.js` or `npm run pm2`
 
 ### TODOs:
 - more research on data format and types
-- instead of infering every field as string, attempt to add integer capabilities
 - configurable migration strategy createOrUpdate (decreases speed due to the extra check but doesn't create duplicates, and also updated already inserted data - this need more data inspection/research and knowledge of the schema)
 - unit tests
 - instrumentation
