@@ -25,21 +25,21 @@ Aims to provide 3 data ingestion/migration strategies:
 {
 
 	"app": {
-		"logLevel": "debug",							//log level
-		"targetFilePath": "./mocks/0.cj",						// target file path 
-		"targetDatabaseClient": "mongo",					        // target database
-		"migrationStrategy": "checkIfExists",						// forceCreate, checkIfExists or createOrUpdate
-		"insertBatchSize": 5000,				//insert batch size for forceCreate mode
-        "singleInsertConcurrency": 5					//insert concurrency for checkIfExists and createOrUpdate modes
+		"logLevel": "debug",				//log level
+		"targetFilePath": "./mocks/0.cj",		// target file path 
+		"targetDatabaseClient": "mongo",                // target database
+		"migrationStrategy": "checkIfExists",		// forceCreate, checkIfExists or createOrUpdate
+		"insertBatchSize": 5000,			//insert batch size for forceCreate mode
+                "singleInsertConcurrency": 5			//insert concurrency for checkIfExists and createOrUpdate modes
 	},
-	"postgres": {									        // postgres connection details
+	"postgres": {					        // postgres connection details
 		"host": "localhost",
 		"port": "5432",
 		"username": "postgres",
 		"password": "postgres",
 		"database": "schema_metrics"
 	},
-	"mongo": {										// mongo connection details
+	"mongo": {						// mongo connection details
 		"connString": "mongodb://localhost/schema_metrics"
 	}
 }
